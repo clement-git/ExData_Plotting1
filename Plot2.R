@@ -47,9 +47,9 @@ rownames(DataExtract) <- 1:nrow(DataExtract)
 attach(DataExtract)
 
 ## Plot a graph of Global_active_power against DateTime
-###Note: I set las=1 to rotate the Global Active Power values 
 
-plot(DateTime, Global_active_power, ylab = "Global Active Power (kilowatts)", xlab = "", type = "l", las=1)
+
+plot(DateTime, Global_active_power, ylab = "Global Active Power (kilowatts)", xlab = "", type = "l")
 
 
 

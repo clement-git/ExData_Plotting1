@@ -46,11 +46,8 @@ rownames(DataExtract) <- 1:nrow(DataExtract)
 attach(DataExtract)
 
 ## Plot a graph of Energy Sub Metering against DateTime
-###Note: I set las=1 to rotate the Energy sub metering values 
 
-
-
-plot(DateTime, Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "", col = "1", las=1)
+plot(DateTime, Sub_metering_1, type = "l", ylab = "Energy sub metering", xlab = "", col = "1")
 lines(DateTime, Sub_metering_2, col = "2") 
 lines(DateTime, Sub_metering_3, col = "4") 
 legend("topright", col = c("1", "2", "4"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"),  lwd = 2, cex = 0.75)

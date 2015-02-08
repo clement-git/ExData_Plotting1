@@ -44,9 +44,9 @@ rownames(DataExtract) <- 1:nrow(DataExtract)
 attach(DataExtract)
 
 ## Plot the histogram using the hist command
-###Note: I set las=1 to rotate the frequency values 
 
-hist(Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylim=c(0, 1200), breaks=11, col="red", las=1)
+
+hist(Global_active_power, main="Global Active Power", xlab="Global Active Power (kilowatts)", ylim=c(0, 1200), breaks=11, col="red")
 
 ##Save Histogram as as plot1.png
 

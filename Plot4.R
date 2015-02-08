@@ -34,19 +34,19 @@ DataExtract$Datetime <- as.POSIXct(datetime)
 par(mfrow=c(2,2), mar=c(4,4,1,1))
 with(DataExtract, {
    ## Top left
-  plot(Global_active_power~Datetime, type="l", ylab="Global Active Power", las=1, xlab="")
+  plot(Global_active_power~Datetime, type="l", ylab="Global Active Power", xlab="")
   
   ## Top right
-  plot(Voltage~Datetime, type="l", ylab="Voltage", las=1, xlab="datetime")
+  plot(Voltage~Datetime, type="l", ylab="Voltage", xlab="datetime")
   
   ## Bottom left
-  plot(Sub_metering_1~Datetime, type="l", ylab="Energy sub metering", las=1, xlab="")
+  plot(Sub_metering_1~Datetime, type="l", ylab="Energy sub metering", xlab="")
   lines(Sub_metering_2~Datetime, col='2')
   lines(Sub_metering_3~Datetime, col='4')
   legend("topright", col = c("1", "2", "4"), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lwd = 2, cex = 0.60)
   
   ##Bottom right
-  plot(Global_reactive_power~Datetime, type="l", ylab="Global Rective Power", xlab="datetime", las=1)
+  plot(Global_reactive_power~Datetime, type="l", ylab="Global Rective Power", xlab="datetime")
 })
 
 ##Save Graph as plot4.png
